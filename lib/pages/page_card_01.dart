@@ -14,7 +14,13 @@ class MyHomePage extends StatelessWidget {
               child: Container(
                 padding: const EdgeInsets.all(20.0),
                 child: const Column(
-                  children: [],
+                  children: [
+                    Card(
+                    color: Colors.red,
+                    child: Text("Card with color", 
+                    style: TextStyle(fontSize: 16.0)),
+                    ),
+                  ],
                 ),
               ),
             ),
