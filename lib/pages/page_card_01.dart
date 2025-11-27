@@ -13,13 +13,22 @@ class MyHomePage extends StatelessWidget {
             body: SingleChildScrollView(
               child: Container(
                 padding: const EdgeInsets.all(20.0),
-                child: const Column(
+                child: Column(
                   children: [
                     Card(
                     color: Colors.red,
                     child: Text("Card with color", 
                     style: TextStyle(fontSize: 16.0)),
                     ),
+                    SizedBox(height: 20.0),
+
+                    Container(
+                      decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(12.0),
+                      color: Colors.red,
+                      ),
+                      child: Text("Container with color", style: TextStyle(fontSize: 16.0)),
+                      ),
                   ],
                 ),
               ),

@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'card week 8',
       home: const MyHomePage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
