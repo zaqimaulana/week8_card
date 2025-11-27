@@ -117,7 +117,38 @@ class MyHomePage extends StatelessWidget {
                       child: Text("Custom border Radius Card", style: TextStyle(fontSize: 14.0)),
                       ),
                       ),
-
+                      SizedBox(height: 20.0),
+                      
+                      Card(
+                      elevation: 8,
+                      child: Padding(
+                        //padding
+                        padding: const EdgeInsets.all(20.0),
+                        // membuat Column untuk menempatkan text Title
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            const Text(
+                              'Tentang Saya',
+                              style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                              ),
+                            ),
+                            const SizedBox(height: 12),
+                            Text(
+                              'Saya zaqi maulana, seorang mahasiswa teknik informatika (software engginer)',
+                              style: TextStyle(
+                                fontSize: 15,
+                                color: Colors.grey[700],
+                                height: 1.5,
+                              ),
+                              textAlign: TextAlign.justify,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
