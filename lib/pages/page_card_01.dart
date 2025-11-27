@@ -29,6 +29,13 @@ class MyHomePage extends StatelessWidget {
                       ),
                       child: Text("Container with color", style: TextStyle(fontSize: 16.0)),
                       ),
+                      SizedBox(height: 20.0),
+
+                      Card(
+                      elevation: 8, // tinggi bayangan
+                      color: Colors.yellow,
+                      child: Text("Tinggi bayangan Shadow", style: TextStyle(fontSize: 12.0)),
+                      ),
                   ],
                 ),
               ),
